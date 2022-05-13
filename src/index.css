@@ -22,7 +22,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; 
   }
 }
 
@@ -35,6 +35,24 @@ body {
   }
 }
 
+.App-Nav{
+  background-color: rgba(2, 163, 249, 0.418);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-Nav a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+.App-Nav a:hover{
+  font-size: 30px;
+}
+.App-Nav nav{
+  display: flex;
+  gap: 50px;
+}
 .App-section{
   display: flex;
   flex-direction: column;

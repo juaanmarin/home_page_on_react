@@ -6,12 +6,7 @@ import { Home } from "./components/pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <Home/>
-      </div>
-      
-
-     
+      <Home/>
 
       {/* <section className="App-section">
         <h2 className="secondTitle">hellow</h2>

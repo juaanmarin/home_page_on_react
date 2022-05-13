@@ -5,8 +5,8 @@ export const Nav = () => {
     <>
         <nav>
             <a href="">home</a>
-            <a href="">personal</a>
-            <a href="">services</a>
+            <a href="">about</a>
+            <a href="">contact use</a>
         </nav>
     </>
     
