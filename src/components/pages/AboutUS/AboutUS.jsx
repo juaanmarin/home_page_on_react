@@ -1,20 +1,19 @@
 import React from 'react'
 import { HeaderHome } from '../../layouts/HeaderHome/HeaderHome'
-import { NavHome } from '../../layouts/NavHome/NavHome'
 import { Title } from '../../UI/TitleP/Title'
+import { NavHome } from '../../layouts/NavHome/NavHome'
 
-export const Home = () => {
+export const AboutUS = () => {
   return (
-    <>
+    <>  
     <div className="App-header">
-        <Title></Title>
-        <HeaderHome/>
+        <Title textTitle='aboutUS'></Title>
+        <HeaderHome></HeaderHome>
     </div>
-    
     <div className="App-Nav">
         <NavHome></NavHome>
     </div>
-   
     </>
+       
   )
 }

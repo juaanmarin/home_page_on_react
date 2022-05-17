@@ -3,18 +3,17 @@ import { HeaderHome } from '../../layouts/HeaderHome/HeaderHome'
 import { NavHome } from '../../layouts/NavHome/NavHome'
 import { Title } from '../../UI/TitleP/Title'
 
-export const Home = () => {
+export const ContactUS = () => {
   return (
     <>
     <div className="App-header">
-        <Title></Title>
-        <HeaderHome/>
+        <Title textTitle='ContactUS'></Title>
+        <HeaderHome></HeaderHome>
     </div>
-    
     <div className="App-Nav">
         <NavHome></NavHome>
     </div>
-   
     </>
+    
   )
 }
