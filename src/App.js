@@ -3,7 +3,8 @@ import { AboutUS } from "./components/pages/AboutUS/AboutUS";
 import { ContactUS } from "./components/pages/ContactUS/ContactUS";
 import { Home } from "./components/pages/Home/Home";
 
-import { NavHome } from "./components/layouts/NavHome/NavHome";
+
+import { Contador } from "./components/pages/Contador/Contador";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/aboutUS" element={<AboutUS/>}></Route>
         <Route path="/contactUS" element={<ContactUS/>}></Route>
+        <Route path="/Contador" element={<Contador/>}></Route>
       </Routes>
 
       {/* <section className="App-section">

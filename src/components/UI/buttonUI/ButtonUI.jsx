@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const ButtonUI = () => {
+export const ButtonUI = ({style, textName}) => {
   return (
-    <button>buttonUi</button>
+    <button className={style}> {textName}</button>
   )
 }

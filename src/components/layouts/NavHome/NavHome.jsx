@@ -8,6 +8,7 @@ export const NavHome = () => {
         <Ancla style="ancla" references="/" textAncla="Home" />
         <Ancla style="ancla" references="/aboutUS" textAncla="AboutUS" />
         <Ancla style="ancla" references="/contactUS" textAncla="ContactUS" />
+        <Ancla style="ancla" references="/Contador" textAncla="Contador" />
     </nav>
 
   )
