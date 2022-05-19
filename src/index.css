@@ -82,14 +82,16 @@ body {
   text-align: center;
 }
 
-footer{
+.footer{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: #282c34;
   color: white;
 }
-footer img{
-  width: 60px;
+.footer img{
+  width: 50px;
+  height: 50px;
 }
 .icons{
   display: flex;
@@ -98,4 +100,5 @@ footer img{
 .contact{
   display: flex;
   gap: 10px;
+  align-items: center;
 }
