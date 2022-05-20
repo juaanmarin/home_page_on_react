@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <div className='footer'>
          <div className="contact">
-            <img src="" alt="" />
+            <img src={gmail} alt="" />
             <h2>@juaanmarin2007@gmail.com</h2>
         </div>
         <div className="icons">
@@ -19,7 +19,6 @@ export const Footer = () => {
             <img src={facebook} alt="" />
             <img src={gitHub} alt="" />
             <img src={gitLab} alt="" />
-            <img src={gmail} alt="" />
             <img src={twiter} alt="" />
             <img src={instagram} alt="" />
         </div>
