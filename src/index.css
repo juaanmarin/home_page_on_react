@@ -58,9 +58,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .secondTitle{
   font-size: 50px;
+}
+.botones{
+  display: flex;
+  gap: 15px;
 }
 .App-section button{
   width: 200px;
