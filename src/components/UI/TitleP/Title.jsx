@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Title = () => {
+export const Title = ({style,textTitle="welcome to home page on react"}) => {
   return (
-    <h1 className="title">welcome to home page on react</h1>
+    <h1 className="title">{textTitle}</h1>
   )
 }

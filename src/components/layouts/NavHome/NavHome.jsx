@@ -1,8 +1,15 @@
 import React from 'react'
-import { Nav } from '../../UI/Nav/Nav'
+import {Ancla} from "../../UI/Ancla/Ancla"
 
 export const NavHome = () => {
   return (
-    <Nav></Nav>
+
+    <nav>
+        <Ancla style="ancla" references="/" textAncla="Home" />
+        <Ancla style="ancla" references="/aboutUS" textAncla="AboutUS" />
+        <Ancla style="ancla" references="/contactUS" textAncla="ContactUS" />
+        <Ancla style="ancla" references="/Contador" textAncla="Contador" />
+    </nav>
+
   )
 }

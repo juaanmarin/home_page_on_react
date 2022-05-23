@@ -1,12 +1,22 @@
+import { Route, Routes } from "react-router-dom";
+import { AboutUS } from "./components/pages/AboutUS/AboutUS";
+import { ContactUS } from "./components/pages/ContactUS/ContactUS";
 import { Home } from "./components/pages/Home/Home";
-// import {ButtonUI} from "./components/UI/buttonUI/ButtonUI"
-//import {Logo} from "./components/UI/Logo/Logo"
+
+
+import { Contador } from "./components/pages/Contador/Contador";
 
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/aboutUS" element={<AboutUS/>}></Route>
+        <Route path="/contactUS" element={<ContactUS/>}></Route>
+        <Route path="/Contador" element={<Contador/>}></Route>
+      </Routes>
 
       {/* <section className="App-section">
         <h2 className="secondTitle">hellow</h2>
