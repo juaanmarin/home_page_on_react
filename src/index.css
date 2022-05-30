@@ -62,7 +62,6 @@
 .App-section{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   gap: 10px;
@@ -219,9 +218,4 @@ button.restaurar{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .card-rick{
-    height: 400px;
-    width: 350px;
-    background-color: #00C8B1;
   }

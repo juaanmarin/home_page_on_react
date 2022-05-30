@@ -1,8 +1,7 @@
 import React from 'react'
 
-export const Intput = (clase, texto) => {
+export const Intput = ({clase, texto, name, type}) => {
   return (
-      <input className={clase}  placeholder={texto}/>
-    
+      <input className={clase} type={type} placeholder={texto} name={name}/>   
   )
 }

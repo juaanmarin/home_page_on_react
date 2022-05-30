@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Ancla = ({style,references,textAncla}) => {
+export const Ancla = ({styleA,references,textAncla}) => {
   return (
-    <Link className={style} to={references}> {textAncla} </Link>
+    <Link className={styleA} to={references}> {textAncla} </Link>
   )
 }
