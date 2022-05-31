@@ -5,12 +5,16 @@ import { NavHome } from '../../layouts/NavHome/NavHome'
 import { ButtonUI } from '../../UI/buttonUI/ButtonUI'
 import { Intput } from '../../UI/Input/Intput'
 import { Title } from '../../UI/TitleP/Title'
-
+import emailjs  from '@emailjs/browser'
 
 export const ContactUS = () => {
 
-  function sendEmail() {
-
+  const sendEmail=(event)=>{
+    event.preventDefault();
+    emailjs.sendForm('service_a9i3688', 'template_apamnro', event.target, 'P2_WnulkCk5Cf359t')
+    .then(response=> console.log(response))
+    .catch(error=> console.log(error))
+  
   }
 
   return (
@@ -23,10 +27,17 @@ export const ContactUS = () => {
         <NavHome></NavHome>
     </div>
     <div className='section-Home'>
-      <Intput clase="" type="" name="user_name" texto="name"></Intput>
-      <Intput clase="" type="email" name="user_email" texto="Email" ></Intput>
-      <Intput clase="" name="user_message" texto="Mensaje"></Intput>
-      <ButtonUI classBtn="" event={sendEmail} textName="enviar"></ButtonUI>
+      <form className='formulario' onSubmit={sendEmail}>
+        <Intput clase="inputUserName" type="text" name="user_name" texto="name"></Intput>
+
+        <Intput clase="inputUserEmail" type="email" name="user_email" texto="Email" ></Intput>
+
+        <textarea className='textmessage' name='user_message' id="" cols="30" rows="10" placeholder='escriba'></textarea>
+
+        <ButtonUI classBtn="btnEmail" textName="enviar" ></ButtonUI>
+
+      </form>
+
     </div>
     <Footer />
     </>
