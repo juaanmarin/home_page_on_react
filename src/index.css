@@ -170,8 +170,7 @@ button.restaurar{
 }
 
 .swtich-container{
-  position: fixed;
-  right: 9%;
+  margin-left: 50px;
 }
 
 .lbl{
@@ -213,11 +212,11 @@ button.restaurar{
     background: linear-gradient(to left, rgb(0, 208, 255), rgb(255, 255, 255));
   }
   .section-Home{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
   }
   .formulario{
     border: solid 1px rgba(0, 0, 0, 0.489);
@@ -250,4 +249,24 @@ button.restaurar{
     background-color: tomato;
     font-size: 20px;
     cursor: pointer;
+  }
+  .gifs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .gif img{
+    width: 300px;
+    height:400px;
+  }
+  #input{
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 23px;
   }
