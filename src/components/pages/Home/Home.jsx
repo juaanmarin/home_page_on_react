@@ -47,19 +47,19 @@ export const Home = () => {
         <NavHome></NavHome>
     </div>
     <div className='section-Home'>
-    <div className='buscar'>
-      <Intput identificador="input" event={searchGif} texto="busque"></Intput>
-    </div>
-    <div className='gifs'>
-
-    {characters.map((item, index) => (
-      <div className="gif" key={index}>
-          
-          <img src={item.media[0].mediumgif.url} alt={item.content_description}></img>
-          
+    <div className='home-section'>
+      <div className='buscar'>
+        <Intput identificador="input" event={searchGif} texto="busque"></Intput>
       </div>
-    ))}
+      <div className='gifs'>
+        {characters.map((item, index) => (
+          <div className="gif" key={index}>      
+            <img src={item.media[0].mediumgif.url} alt={item.content_description}></img>
+          </div>
+        ))}
+      </div>
     </div>
+
     </div>
     <Footer />
    

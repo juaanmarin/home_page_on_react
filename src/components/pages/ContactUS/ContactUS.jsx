@@ -26,17 +26,19 @@ export const ContactUS = () => {
     <div className="App-Nav">
         <NavHome></NavHome>
     </div>
+    
     <div className='section-Home'>
-      <form className='formulario' onSubmit={sendEmail}>
-        <Intput clase="inputUserName" type="text" name="user_name" texto="name"></Intput>
+      <div className='formulario-contactus'>
+        <form className='formulario' onSubmit={sendEmail}>
+          <Intput clase="inputUserName" type="text" name="user_name" texto="name"></Intput>
 
-        <Intput clase="inputUserEmail" type="email" name="user_email" texto="Email" ></Intput>
+          <Intput clase="inputUserEmail" type="email" name="user_email" texto="Email" ></Intput>
 
-        <textarea className='textmessage' name='user_message' id="" cols="30" rows="10" placeholder='escriba'></textarea>
+          <textarea className='textmessage' name='user_message' id="" cols="30" rows="10" placeholder='escriba'></textarea>
 
-        <ButtonUI classBtn="btnEmail" textName="enviar" ></ButtonUI>
-
-      </form>
+          <ButtonUI classBtn="btnEmail" textName="enviar" ></ButtonUI>
+        </form>
+      </div>
 
     </div>
     <Footer />
